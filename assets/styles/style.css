@@ -1,0 +1,100 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Silkscreen&display=swap');
+
+:root {
+    --fonte-principal: 'Silkscreen', sans-serif;
+    --fonte-secundaria: 'M PLUS Rounded 1c', sans-serif;
+}
+
+*{
+    font-family: var(--fonte-principal);
+}
+
+body {
+    align-items: center;
+    background-image: linear-gradient(rgba(229, 0, 113, 1), rgba(237, 109, 29, 1));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    width: 100%;
+}
+
+.apresentacao_jogo{
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 50vh;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.apresentacao_jogo img{
+    width: 50px;
+}
+
+.apresentacao_jogo button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.titulo_jogo {
+    margin: 5px 0;
+}
+
+.grid{
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 45px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    margin-bottom: 10px;
+    max-width: 800px;
+    padding: 25px;
+    width: 100%;
+}
+
+.card {
+    aspect-ratio: 1/1;
+    background-color: #E9E9E9;
+    border: 2px solid;
+    border-radius: 15px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 400ms ease;
+    width: 100%;
+}
+
+.face{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.front{
+    transform: rotateY(180deg);
+}
+
+.costas{
+    backface-visibility: hidden;
+    background-color: #E9E9E9;
+    background-image: url('../images/Icon16x16.svg');
+    border-radius: 15px;
+}
+
+.reveal-card{
+    transform: rotateY(180deg);
+}
+
+
+
