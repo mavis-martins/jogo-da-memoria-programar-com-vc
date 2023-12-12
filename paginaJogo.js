@@ -22,8 +22,10 @@ const checkEndGame = () => {
     const reavealedCards = document.querySelectorAll('.reveal-card');
 
     if (reavealedCards.length === 12) {
-        alert('Você ganhou!');
-        window.location.reload();
+        setTimeout( () => {
+            alert('Você ganhou!');
+            window.location.reload();
+        }, 650);
     }
 }
 
